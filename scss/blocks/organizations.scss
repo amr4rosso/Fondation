@@ -1,0 +1,19 @@
+.organizations {
+	margin: 62px auto;
+	
+	&__ul {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		justify-items: center;
+		align-items: center;
+	}
+
+	&-img {
+		transition: 600ms all;
+
+		&:hover {
+			transform: scale(115%) translateY(-15px);
+			transition: 800ms;
+		}
+	}
+}

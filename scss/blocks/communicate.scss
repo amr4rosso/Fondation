@@ -1,0 +1,61 @@
+.communicate {
+	margin: 110px 0;
+
+	&__preview {
+		@extend %flex;
+		justify-content: space-between;
+		margin-bottom: 105px;
+
+		&-info {
+			max-width: 462px;
+
+			&-pre-title {
+				@extend %pre-title;
+				color: $blue;
+				margin-bottom: 24px;
+			}
+
+			&-title {
+				@extend %title;
+				margin-bottom: 30px;
+			}
+
+			&-text {
+				@extend %text;
+				margin-bottom: 39px;
+			}
+
+			&-button {
+				@extend %button;
+			}
+		}
+	}
+
+	&__loft {
+		@extend %flex;
+		justify-content: space-between;
+
+		&-cards {
+			max-width: 360px;
+			margin-right: 30px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&-text {
+				@extend %text-second;
+				color: $color-text;
+
+				&-span {
+					font-weight: 700;
+				}
+			}
+
+			&-link {
+				@extend %text-second;
+				text-decoration-line: underline;
+			}
+		}
+	}
+}

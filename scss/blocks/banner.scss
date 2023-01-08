@@ -1,0 +1,41 @@
+.banner {
+	background: $bg-header;
+	padding-bottom: 126px;
+	position: relative;
+
+	&__info {
+		position: sticky;
+		z-index: 1;
+
+		&-title {
+			@extend %title-banner;
+			margin-bottom: 34px;
+			max-width: 745px;
+			
+		}
+
+		&-text {
+			@extend %text;
+			margin-bottom: 58px;
+			max-width: 456px;
+		}
+
+		&-buttons {
+			
+			&-button {
+				@extend %button;
+			}
+
+			&-button-white {
+				@extend %button-white;
+			}
+		}
+	}
+
+	&__image {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		z-index: 0;
+	}
+}

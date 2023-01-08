@@ -1,0 +1,75 @@
+
+@include laptop {
+	.container {
+		max-width: $breakpoint_tablet - 50;
+	}
+
+	.organizations {
+
+		&__ul {
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			gap: 50px;
+		}
+	}
+
+}
+
+@include tablet() {
+	.container {
+		max-width: $breakpoint_mobile - 50;
+	}
+
+
+}
+
+@include mobile() {
+	.container {
+		max-width: $breakpoint_mobile_md - 50;
+	}
+
+	.organizations {
+
+		&__ul {
+			gap: 20px;
+		}
+
+		&-img {
+			max-width: 70px;
+		}
+	}
+
+}
+
+@include mobile_md() {
+	.container {
+		max-width: $breakpoint_mobile_ms - 50;
+	}
+
+	.organizations {
+		margin: 32px auto;
+
+		&__ul {
+			gap: 10px 5px;
+
+			&-img {
+				width: 90px;
+			}
+		}
+	}
+
+}
+
+@include mobile_ms() {
+	.container {
+		max-width: $breakpoint_mobile_xs - 10;
+	}
+
+}
+
+@include mobile_xs() {
+	.container {
+		max-width: 290px;
+	}
+
+}

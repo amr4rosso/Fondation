@@ -1,0 +1,82 @@
+.carousel {
+	padding-bottom: 167px;
+	position: relative;
+
+	&__info {
+		max-width: 750px;
+		position: relative;
+		margin: 0 auto;
+
+		&-block {
+			text-align: center;
+			display: none;
+
+			&-title {
+				font-size: 24px;
+				line-height: 30px;
+				color: #3142C6;
+				font-weight: 700;
+				margin-bottom: 28px;
+
+			}
+
+			&-text {
+				@extend %text;
+				max-width: 750px;
+				display: inline-block;
+			}
+
+			&-employee {
+
+				&-name,
+				&-text {
+					font-size: 16px;
+					line-height: 24px;
+					color: $color-text;
+				}
+
+				&-name {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+	&__abs {
+		display: block;
+		position: absolute;
+		right: 25px;
+		bottom: 0;
+	}
+
+
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		bottom: -90px;
+		width: auto;
+		margin-top: -22px;
+		padding: 16px;
+		color: rgb(134, 130, 130);
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 50%;
+		border: 1px solid #3142C6;
+		background: transparent;
+		user-select: none;
+	}
+
+	.prev {
+		left: 90px;
+	}
+	
+	.next {
+		right: 90px;
+		border-radius: 50%;
+	}
+	
+	.prev:hover, .next:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+}

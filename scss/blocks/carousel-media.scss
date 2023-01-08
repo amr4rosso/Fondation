@@ -1,0 +1,66 @@
+
+@include laptop {
+	.container {
+		max-width: $breakpoint_tablet - 50;
+	}
+
+	.carousel {
+		position: static;
+		padding: 44px 0 87px;
+
+		&__abs {
+			position: static;
+			margin: 0 auto;
+			margin-top: 151px;
+		}
+	}
+
+}
+
+@include tablet() {
+	.container {
+		max-width: $breakpoint_mobile - 50;
+	}
+
+
+}
+
+@include mobile() {
+	.container {
+		max-width: $breakpoint_mobile_md - 50;
+	}
+
+}
+
+@include mobile_md() {
+	.container {
+		max-width: $breakpoint_mobile_ms - 50;
+	}
+
+	.carousel {
+
+		& .prev {
+			left: 0px;
+		}
+		
+		& .next {
+			right: 0px;
+		}
+
+	}
+
+}
+
+@include mobile_ms() {
+	.container {
+		max-width: $breakpoint_mobile_xs - 10;
+	}
+
+}
+
+@include mobile_xs() {
+	.container {
+		max-width: 290px;
+	}
+
+}

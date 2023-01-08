@@ -1,0 +1,90 @@
+.header {
+	background: $bg-header;
+	padding: 44px 0 79px;
+
+	& .container {
+		@extend %flex;
+		justify-content: space-between
+	}
+
+	&__logo {
+		
+		.logo {
+			@extend %flex;
+
+			&__info {
+
+				&-title {
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 25px;
+				}
+
+				&-text {
+					font-size: 18px;
+					line-height: 25px;
+					color: rgba(43, 41, 45, 0.6);
+				}
+			}
+		}
+	}
+
+	&__nav {
+		@extend %flex;
+
+		&-ul {
+		@extend %flex;
+
+		}
+
+		&-li {
+			margin-right: 30px;
+		}
+
+		&-link {
+			font-size: 18px;
+			line-height: 25px;
+			color: $color-text;
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: inherit;
+				left: 0;
+				bottom: -3px;
+				height: 2px;
+				width: 0;
+				background: $color-text;
+				transition: 400ms ease all;
+			}
+
+			&:hover::after {
+				width: 100%;
+				transition: 800ms ease all;
+			}
+
+			&:hover {
+				font-weight: 700;
+			}
+		}
+
+		&-button {
+			@extend %button;
+		}
+	}
+
+	.check {
+		width: 30px;
+		height: 4px;
+		background-color: $color-text;
+	}
+	
+	.check:not(:last-of-type) {
+		margin-bottom: 5px;
+	}
+
+	.checkbox, .check-wrapper {
+		display: none;
+	}
+}

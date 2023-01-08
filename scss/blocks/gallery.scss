@@ -1,0 +1,40 @@
+.gallery {
+	margin: 90px 0;
+	text-align: center;
+
+	&__title {
+		@extend %title;
+		margin-bottom: 26px;
+	}
+
+	&__text {
+		@extend %text;
+		width: 554px;
+		margin: 0 auto;
+		margin-bottom: 96px;
+		// display: inline-block;
+	}
+
+	&__photos {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		gap: 26px 41px;
+		align-items: center;
+
+		&-item {
+			border-radius: 8px;
+			transition: 600ms all;
+
+			&:hover {
+				transform: scale(103%);
+				box-shadow: 0px 3px 15px 5px $color-text;
+			}
+
+			&:nth-child(3),
+			&:nth-child(4) {
+				grid-row: span 2;
+			}
+		}
+	}
+}

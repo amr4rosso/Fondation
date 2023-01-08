@@ -1,0 +1,135 @@
+.footer {
+	margin: 90px 0 38px;
+
+	&__head {
+		@extend %flex;
+		justify-content: space-between;
+
+		&-preview {
+
+			&-logo {
+
+				.logo {
+					@extend %flex;
+		
+					&__info {
+		
+						&-title {
+							font-weight: 700;
+							font-size: 20px;
+							line-height: 25px;
+						}
+		
+						&-text {
+							font-size: 18px;
+							line-height: 25px;
+							color: rgba(43, 41, 45, 0.6);
+						}
+					}
+				}
+			}
+
+			&-text {
+				@extend %text-second;
+				max-width: 360px;
+				color: rgba(43, 41, 45, 0.6);
+				margin: 25px 0;
+			}
+
+			&-product {
+
+				&-title {
+					font-weight: 700;
+					font-size: 22px;
+					line-height: 28px;
+					margin-bottom: 18px;
+				}
+
+				&-list {
+
+					&-item:not(:last-of-type) {
+						margin-bottom: 10px;
+					}
+
+					&-link {
+						font-size: 18px;
+						line-height: 30px;
+						color: rgba(43, 41, 45, 0.6);
+					}
+					
+				}
+			}
+
+			&-company {
+
+				&-title {
+					font-weight: 700;
+					font-size: 22px;
+					line-height: 28px;
+					margin-bottom: 18px;
+				}
+
+				&-list {
+
+					&-item:not(:last-of-type) {
+						margin-bottom: 10px;
+					}
+
+					&-link {
+						font-size: 18px;
+						line-height: 30px;
+						color: rgba(43, 41, 45, 0.6);
+					}
+					
+				}
+			}
+
+
+		}
+	}
+
+	&__separate {
+		height: 1px;
+		display: block;
+		background: #2B292D;
+		opacity: 0.1;
+		margin: 47px 0 13px;
+	}
+
+	&__loft {
+
+		& .container {
+			@extend %flex;
+			justify-content: space-between; 
+		}
+
+		&-menu {
+
+			&-ul {
+				@extend %flex;
+			}
+
+			&-li:not(:last-of-type) {
+				margin-right: 20px;
+			}
+
+			&-link {
+				font-size: 14px;
+				line-height: 22px;
+				color: rgba(43, 41, 45, 0.6);
+			}
+		}
+
+		&-social {
+
+			&-ul {
+				@extend %flex;	
+			}
+
+			&-li:not(:last-of-type) {
+				margin-right: 20px;
+			}
+		
+		}
+	}
+}

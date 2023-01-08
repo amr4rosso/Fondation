@@ -1,0 +1,68 @@
+.inbox {
+	padding: 117px 0 116px;
+	background: #fcf0e366;
+
+	& .container {
+		@extend %flex;
+		justify-content: space-between;
+	}
+
+	&__info {
+
+		&-pre-title {
+			@extend %pre-title;
+			color: $orange;
+		}
+
+		&-title {
+			@extend %title;
+			margin-bottom: 26px;
+			max-width: 462px;
+		}
+
+		&-text {
+			@extend %text;
+			margin-bottom: 44px;
+			max-width: 461px;
+		}
+
+		&-response {
+			max-width: 510px;
+			background: #fff;
+			padding: 30px 30px 24px;
+			border-bottom: 4px solid $blue;
+
+			&-text {
+				font-size: 20px;
+				line-height: 28px;
+				color: $color-text;
+				margin-bottom: 26px;
+			}
+
+			&-span {
+				font-weight: 700;
+			}
+
+			&-user {
+				@extend %flex;
+
+				&-img {
+					margin-right: 11px;
+				}
+
+				&-name {
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 22px;
+					color: $color-text;
+				}
+
+				&-position {
+					font-size: 16px;
+					line-height: 22px;
+					color: #2b292d99;
+				}
+			}
+		}
+	}
+}

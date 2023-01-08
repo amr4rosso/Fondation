@@ -1,0 +1,87 @@
+@import "./reset.scss";
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #2B292D;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.container {
+	width: 1140px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+// section features 
+
+.change-notes-border {
+	border-bottom: 1px solid #3142C6;
+}
+
+.change-notes-color {
+	color: #3142C6;
+}
+
+.notes-head.active > .features-svg path {
+	fill: #3142c6;
+}
+
+
+
+// section Hire 
+
+.change-color {
+	color: #fff;
+	background-color: #3142C5;
+}
+
+.change-color-arrow {
+	fill: rgb(255, 255, 255);
+}
+
+
+.hire__slide-position.active > .hire__slide-position-arrow .hire__slide-position-svg path {
+	fill: #fff;
+}
+
+//  scroll button 
+
+#up {
+	display: block;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	font-size: 22px;
+	font-weight: 700;
+	bottom: 100px;
+	right: 50px;
+	background-color: #F3C6BD;
+	border-radius: 50%;
+	color: #3142c4;
+	cursor: pointer;
+	box-shadow: -1px 2px 15px 5px rgba(49,66,198,0.3);
+	transition: 0.8s all;
+	z-index: 99;
+}
+
+#up:hover {
+	transform: scale(110%);
+	box-shadow: -1px 2px 15px 5px rgba(49,66,198,0.8)
+}
+
+#up .scroll-btn {
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	display: inline-block;
+	transform: rotate(-90deg) translate(13px, -7px);
+}

@@ -1,0 +1,99 @@
+@include laptop() {
+	.container {
+		max-width: $breakpoint_tablet - 50;
+	}
+
+	.banner {
+		padding-bottom: 0;
+		position: static;
+
+		&__info {
+			z-index: auto;
+
+			&-title {
+				margin-bottom: 15px;
+				max-width: 525px;
+			}
+
+			&-text {
+				max-width: 355px;
+				margin-bottom: 30px;
+			}
+		}
+
+		&__image {
+			position: static;
+			z-index: auto;
+
+			&-img {
+				max-width: 620px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@include tablet() {
+	.container {
+		max-width: $breakpoint_mobile - 50;
+	}
+
+	.banner {
+
+		&__image-img {
+			max-width: 430px;
+		}
+	}
+}
+
+@include mobile() {
+	.container {
+		max-width: $breakpoint_mobile_md - 50;
+	}
+}
+
+@include mobile_md() {
+	.container {
+		max-width: $breakpoint_mobile_ms - 50;
+	}
+
+	.banner {
+
+		&__image-img {
+			max-width: 290px;
+		}
+	}
+}
+
+@include mobile_ms() {
+	.container {
+		max-width: $breakpoint_mobile_xs - 10;
+	}
+
+	.banner {
+		&__info {
+			&-title {
+				max-width: 290px;
+				margin-bottom: 24px;
+			}
+
+			&-buttons {
+
+				&-button-white {
+					margin: 15px 0 33px;
+				}
+			}
+		}
+
+		&__image-img {
+			max-width: 290px;
+		}
+	}
+}
+
+@include mobile_xs() {
+	.container {
+		max-width: 290px;
+	}
+}                

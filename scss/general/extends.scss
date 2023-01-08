@@ -1,0 +1,112 @@
+
+%title-banner {
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 78px;
+	letter-spacing: -0.5px;
+	color: $color-text;
+
+	@include laptop {
+		font-size: 60px;
+		line-height: 72px;
+	}
+
+	@include mobile_ms {
+		font-size: 50px;
+		line-height: 50px;
+		letter-spacing: -0.3125px;
+	}
+}
+
+%title {
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 56px;
+	letter-spacing: -0.5px;
+	color: $color-text;
+
+	@include mobile_ms {
+		font-size: 40px;
+		line-height: 47px;
+	}
+}
+
+%text {
+	font-size: 24px;
+	line-height: 34px;
+	color: $color-text;
+
+	@include laptop {
+		font-size: 20px;
+	}
+}
+
+%pre-title {
+	font-size: 22px;
+	line-height: 34px;
+}
+
+%text-second {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+%button {
+	width: 160px;
+	height: 48px;
+	color: #ffffff;
+	border-radius: 0.25rem;
+	padding: 10px 25px;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+	transition: all 0.3s ease;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+
+	@include mobile_md {
+		width: 150px;
+	}
+
+	@include mobile_ms {
+		width: 290px;
+	}
+}
+
+%button-white {
+	width: 160px;
+	height: 48px;
+	color: #3040C4;
+	border-radius: 0.25rem;
+	padding: 10px 25px;
+	background: #ffffff;
+	transition: all 0.3s ease;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+
+	@include mobile_md {
+		width: 150px;
+	}
+
+	@include mobile_ms {
+		width: 290px;
+	}
+}
+
+%flex {
+	display: flex;
+	align-items: center;
+}
+
+%input {
+	width: 385px;
+	height: 48px;
+
+	background: #fff;
+	border: 1px solid rgba(43, 41, 45, 0.2);
+	border-radius: 2px;
+	padding-left: 15px;
+	margin-bottom: 10px;
+
+	&::placeholder {
+		font-size: 18px;
+		line-height: 13px;
+	}
+}
+

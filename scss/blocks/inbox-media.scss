@@ -1,0 +1,81 @@
+
+@include laptop {
+	.container {
+		max-width: $breakpoint_tablet - 50;
+	}
+
+	.inbox {
+		
+		& .container {
+			flex-direction: column-reverse;
+		}
+
+		&__info {
+			
+			&-text, &-title, &-pre-title {
+				text-align: center;
+			}
+
+			&-response {
+				margin-bottom: 71px;
+			}
+		}
+	}
+
+}
+
+@include tablet() {
+	.container {
+		max-width: $breakpoint_mobile - 50;
+	}
+}
+
+@include mobile() {
+	.container {
+		max-width: $breakpoint_mobile_md - 50;
+	}
+
+}
+
+@include mobile_md() {
+	.container {
+		max-width: $breakpoint_mobile_ms - 50;
+	}
+
+}
+
+@include mobile_ms() {
+	.container {
+		max-width: $breakpoint_mobile_xs - 10;
+	}
+
+	.inbox {
+
+		& .container {
+			flex-direction: column;
+		}
+
+		&__info {
+			margin: 32px 48px;
+
+			&-pre-title, 
+			&-title,
+			&-text {
+				text-align: left;
+			}
+
+
+			&-response {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+}
+
+@include mobile_xs() {
+	.container {
+		max-width: 290px;
+	}
+
+}

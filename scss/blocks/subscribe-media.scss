@@ -1,0 +1,92 @@
+
+@include laptop {
+	.container {
+		max-width: $breakpoint_tablet - 50;
+	}
+
+	.subscribe {
+
+		& .container {
+			flex-direction: column-reverse;
+		}
+
+		&__info {
+			text-align: center;
+			margin-bottom: 20px;
+			max-width: 100%;
+
+			&-title {
+				max-width: 325px;
+				display: inline-block;
+				margin-bottom: 51px;
+			}
+
+			&-text {
+				max-width: 590px;
+				margin-bottom: 35px;
+			}
+
+			&-form {
+
+				&-input {
+					width: 290px;
+				}
+
+				&-button {
+					width: 290px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
+}
+
+@include tablet() {
+	.container {
+		max-width: $breakpoint_mobile - 50;
+	}
+}
+
+@include mobile() {
+	.container {
+		max-width: $breakpoint_mobile_md - 50;
+	}
+
+}
+
+@include mobile_md() {
+	.container {
+		max-width: $breakpoint_mobile_ms - 50;
+	}
+
+	.subscribe {
+
+		& .container {
+			flex-direction: column;
+		}
+
+		&__info {
+			margin-top: 15px;
+		}
+	}
+
+}
+
+@include mobile_ms() {
+	.container {
+		max-width: $breakpoint_mobile_xs - 10;
+	}
+
+}
+
+@include mobile_xs() {
+	.container {
+		max-width: 290px;
+	}
+
+	.subscribe__info-form-check-text {
+		font-size: 12px;
+	}
+
+}

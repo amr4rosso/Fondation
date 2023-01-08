@@ -1,0 +1,41 @@
+@mixin desktop() {
+	@media screen and (max-width: $breakpoint_desktop) {
+		@content;
+	}
+}
+
+@mixin laptop() {
+	@media screen and (max-width: $breakpoint_laptop) {
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media screen and (max-width: $breakpoint_tablet) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media screen and (max-width: $breakpoint_mobile) {
+		@content;
+	}
+}
+
+@mixin mobile_md() {
+	@media screen and (max-width: $breakpoint_mobile_md) {
+		@content;
+	}
+}
+
+@mixin mobile_ms() {
+	@media screen and (max-width: $breakpoint_mobile_ms) {
+		@content;
+	}
+}
+
+@mixin mobile_xs() {
+	@media screen and (max-width: $breakpoint_mobile_xs) {
+		@content;
+	}
+}
